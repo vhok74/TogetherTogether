@@ -23,6 +23,7 @@ public class Login_db extends AppCompatActivity {
     String Lemail; //아이디 == email
     String Lname; //이름
     String Lpassword; //비번
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +33,7 @@ public class Login_db extends AppCompatActivity {
             if (database == null) {
                 db_helper = new CustomerDB_Helper(getApplicationContext(),dbName,null,1);
                 database = db_helper.getWritableDatabase();
-                Toast.makeText(getApplication(),dbName+"생성 완료",Toast.LENGTH_SHORT).show();
+            //    Toast.makeText(getApplication(),dbName+"생성 완료",Toast.LENGTH_SHORT).show();
             }
             else if(database !=null) {
                 Toast.makeText(getApplication(),"db가 이미 생성 되어있습니다.",Toast.LENGTH_SHORT).show();
@@ -43,8 +44,9 @@ public class Login_db extends AppCompatActivity {
         }
         try {
             if(database !=null){
+
                 database.execSQL("CREATE TABLE if not exists "+tableName+"("+"_id INTEGER PRIMARY KEY "+ "AUTOINCREMENT, name TEXT,"+"email TEXT,"+"password TEXT);");
-                Toast.makeText(getApplication(),tableName+"이 생성되었습니다.",Toast.LENGTH_SHORT).show();
+         //       Toast.makeText(getApplication(),tableName+"이 생성되었습니다.",Toast.LENGTH_SHORT).show();
             }
         }
         catch(Exception e) {
