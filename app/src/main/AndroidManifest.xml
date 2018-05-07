@@ -21,7 +21,7 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".Login" />
         <activity android:name=".member_rgeister" />
-        <activity android:name=".Test"></activity>
+        <activity android:name=".Main"></activity>
     </application>
 
 </manifest>
