@@ -20,7 +20,6 @@
             <android.support.design.widget.TabItem
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                android:
                 android:text="HOME" />
 
             <android.support.design.widget.TabItem
@@ -76,7 +75,7 @@
                         android:layout_height="100dp"
                         android:adjustViewBounds="true"
                         android:cropToPadding="true"
-                        android:srcCompat="@drawable/blank-person-male"
+                        android:srcCompat="@drawable/blank_person_male"
                         app:srcCompat="@drawable/images123" />
 
                     <ImageButton
