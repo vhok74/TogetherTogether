@@ -17,14 +17,12 @@ import android.widget.Toast;
 public class Login_db extends AppCompatActivity {
     SQLiteDatabase database;
     CustomerDB_Helper db_helper;
-    String tableName = "MEMBER";
-    String dbName = "register_member";
+ static final String tableName = "MEMBER";
+ static final  String dbName = "register_member";
 
     String Lemail; //아이디 == email
     String Lname; //이름
     String Lpassword; //비번
-    String Lmajor; //학과
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,8 +43,7 @@ public class Login_db extends AppCompatActivity {
         }
         try {
             if(database !=null){
-                database.execSQL("CREATE TABLE if not exists"+tableName+"("+"_id integer PRIMARY KEY autoincrement,"+
-                        "Name Text"+"Email Text"+"Password Text"+")");
+                database.execSQL("CREATE TABLE if not exists "+tableName+"("+"_id INTEGER PRIMARY KEY "+ "AUTOINCREMENT, name TEXT,"+"email TEXT,"+"password TEXT);");
                 Toast.makeText(getApplication(),tableName+"이 생성되었습니다.",Toast.LENGTH_SHORT).show();
             }
         }

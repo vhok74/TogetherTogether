@@ -3,24 +3,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     >
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:src="@drawable/main_logo"
+        android:layout_gravity="center"
         android:adjustViewBounds="true"
          />
 
     <EditText
-        android:id="@+id/id"
+        android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="ID"/>
+        android:hint="email"/>
 
     <EditText
         android:id="@+id/password"
@@ -62,6 +65,5 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="자동로그인  " />
-
 
 </LinearLayout>

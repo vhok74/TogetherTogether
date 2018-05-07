@@ -2,132 +2,175 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    android:layout_margin="10dp"
+    android:orientation="vertical">
 
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="15dp"
-                android:text="Name   "/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name   "
+            android:textSize="15dp" />
 
             <EditText
                 android:id="@+id/MYname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:hint="이름을 입력하세요." />
-        </TableRow>
+                android:hint="Your name"
+                android:ems="12"
+                android:textSize="15dp"/>
+    </LinearLayout>
 
-        <TableRow
-            android:paddingBottom="15dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="15dp"
-                android:text="Email   "/>
-
-            <EditText
-                android:id="@+id/MYemail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
-                android:hint="이메일을 입력하세요." />
-        </TableRow>
-
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="15dp"
-                android:text="Password   "/>
-
-            <EditText
-                android:id="@+id/MYpassword"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:hint="비밀번호를 입력하세요" />
-        </TableRow>
-
-        <TableRow
-            android:paddingBottom="15dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="15dp"
-                android:text="Password   "/>
-
-            <EditText
-                android:id="@+id/MYpasswordConfirm"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:hint="비밀번호를 한번 더 입력하세요" />
-        </TableRow>
-
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="15dp"
-                android:text="KPU Email   "/>
-
-            <EditText
-                android:id="@+id/schoolEmail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
-                android:hint="학교이메일을 입력하세요." />
-        </TableRow>
-
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="15dp"
-                android:text="Confim   "/>
-
-            <EditText
-                android:id="@+id/confirmNum"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:hint="인증번호5자리를 입력하세요." />
-        </TableRow>
-    </TableLayout>
-    <TableLayout
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:paddingRight="40dp">
+        android:orientation="vertical"
+        android:layout_marginBottom="15dp">
 
-        <TableRow>
-            <Button
-                android:id="@+id/SendConfirmNum"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="인증번호 전송" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email   "
+            android:textSize="15dp" />
 
-            <Button
-                android:id="@+id/confirmNumCkeck"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="인증번호확인" />
+        <EditText
+            android:id="@+id/MYemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Your Email"
+            android:textSize="15dp"
+            android:ems="12"
+            android:inputType="textEmailAddress" />
+    </LinearLayout>
 
-        </TableRow>
-    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password   "
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/MYpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="******"
+            android:textSize="15dp"
+            android:ems="12"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password   "
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/MYpasswordConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:hint="******"
+            android:ems="12"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KPU Email   "
+            android:textSize="15dp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+             <TableRow>
+                 <EditText
+                     android:id="@+id/schoolEmail"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textSize="15dp"
+                     android:ems="12"
+                     android:layout_marginRight="20dp"
+                     android:hint="xxx@kpu.ac.kr"
+                     android:inputType="textEmailAddress" />
+                 <TextView
+                     android:id="@+id/SendConfirmNum"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textSize="13dp"
+                     android:text="인증번호 전송" />
+             </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verification Code "
+            android:textSize="15dp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <EditText
+                    android:id="@+id/confirmNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:textSize="15dp"
+                    android:ems="12"/>
+
+                <TextView
+                    android:id="@+id/confirmNumCkeck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:text="인증번호 확인" />
+
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
 
     <Button
         android:id="@+id/regster_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:text="가입완료"
-        android:layout_marginRight="40dp"/>
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="가입완료" />
 </LinearLayout>
