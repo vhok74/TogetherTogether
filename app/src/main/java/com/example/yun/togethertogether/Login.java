@@ -59,14 +59,6 @@ public class Login extends Login_db {
 
     public void member(View view){
         Intent reg_member = new Intent(getApplication(),member_rgeister.class);
-        Button btn=(Button)findViewById(R.id.Login_Button);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(Login.this, Main.class);
-                startActivity(intent);
-            }
-        });
         reg_member.putExtra("splash","splash");
         startActivity(reg_member);
     }
