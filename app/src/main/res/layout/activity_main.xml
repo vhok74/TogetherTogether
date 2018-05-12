@@ -18,39 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary" />
-
-        <!--<RelativeLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent">-->
-
-            <!--<ImageView-->
-                <!--android:id="@+id/love_sentence"-->
-                <!--android:layout_width="600dp"-->
-                <!--android:layout_height="200dp"-->
-                <!--android:layout_alignParentStart="true"-->
-                <!--android:layout_alignParentTop="true"-->
-                <!--android:layout_marginTop="17dp"-->
-                <!--android:src="@drawable/love_sentence" />-->
-
-            <!--<ImageView-->
-                <!--android:id="@+id/profile"-->
-                <!--android:layout_width="70dp"-->
-                <!--android:layout_height="70dp"-->
-                <!--android:layout_alignParentStart="true"-->
-                <!--android:layout_below="@+id/love_sentence"-->
-                <!--android:layout_marginStart="43dp"-->
-                <!--android:layout_marginTop="68dp"-->
-                <!--android:src="@drawable/profile" />-->
-
-            <!--<ImageView-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="70dp"-->
-
-                <!--android:layout_alignTop="@+id/profile"-->
-                <!--android:layout_toEndOf="@+id/profile"-->
-                <!--android:src="@drawable/profile_detail" />-->
-
-        <!--</RelativeLayout>-->
+        
         <FrameLayout
             android:id="@android:id/tabcontent"
             android:layout_width="match_parent"
