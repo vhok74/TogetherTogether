@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
         animationDrawable.setExitFadeDuration(4500);
         animationDrawable.start();
 
-        Drawable alpha = ((ImageView)findViewById(R.id.love_sentence)).getDrawable();
-        alpha.setAlpha(80);
+//        Drawable alpha = ((ImageView)findViewById(R.id.love_sentence)).getDrawable();
+//        alpha.setAlpha(80);
 
         TabHost tabHost = (TabHost)findViewById(R.id.host);
         tabHost.setup();
